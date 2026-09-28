@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delhi Properties | Buy, Rent & Sell Property in Delhi</title>
+<meta name="description" content="Delhi Properties helps you buy, rent and sell flats, builder floors, houses, plots and commercial property across Delhi — Dwarka, Rohini, Saket, Vasant Kunj, Laxmi Nagar and 25+ more Delhi locations.">
+<meta name="keywords" content="Property Dealer in Delhi, Properties in Delhi, Flats for Sale in Delhi, Flats for Rent in Delhi, Buy Property in Delhi, Rent Property in Delhi">
+<link rel="canonical" href="https://www.delhiproperties.example/index.html">
+<meta property="og:title" content="Delhi Properties | Buy, Rent & Sell Property in Delhi">
+<meta property="og:description" content="Delhi Properties helps you buy, rent and sell flats, builder floors, houses, plots and commercial property across Delhi — Dwarka, Rohini, Saket, Vasant Kunj, Laxmi Nagar and 25+ more Delhi locations.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.delhiproperties.example/index.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1580216643062-cf460548a66a?q=80&w=1200&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏙️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">DP</span>
+      <span>Delhi Properties<span class="brand-sub">Buy · Rent · Sell in Delhi</span></span>
+    </a>
+    <nav class="nav-main" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+<a href="properties.html" class="">Properties</a>
+<a href="buy.html" class="">Buy</a>
+<a href="rent.html" class="">Rent</a>
+<a href="sell.html" class="">Sell</a>
+<a href="about.html" class="">About</a>
+<a href="contact.html" class="">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+919217151926" data-call class="icon-btn call text-actions" aria-label="Call Delhi Properties" title="Call Now"><i class="fa-solid fa-phone"></i></a>
+      <a href="#" data-whatsapp-generic target="_blank" rel="noopener" class="icon-btn whatsapp text-actions" aria-label="Chat on WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <div class="container">
+    <a href="index.html" class="active">Home</a>
+<a href="properties.html" class="">Properties</a>
+<a href="buy.html" class="">Buy</a>
+<a href="rent.html" class="">Rent</a>
+<a href="sell.html" class="">Sell</a>
+<a href="about.html" class="">About</a>
+<a href="contact.html" class="">Contact</a>
+    <div class="mobile-cta">
+      <a href="tel:+919217151926" class="btn btn-primary btn-block"><i class="fa-solid fa-phone"></i> Call Now</a>
+      <a href="#" data-whatsapp-generic target="_blank" rel="noopener" class="btn btn-whatsapp btn-block"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Delhi's Property Marketplace</span>
+      <h1>Find Your Perfect Property in Delhi</h1>
+      <p class="lead">Buy, Rent or Sell Properties Across Delhi — from Dwarka to Mayur Vihar, we cover every corner of the capital.</p>
+
+      <form class="search-box" id="heroSearchForm">
+        <div class="search-tabs" role="tablist" aria-label="Search purpose">
+          <button type="button" class="active" data-purpose="Buy">Buy</button>
+          <button type="button" data-purpose="Rent">Rent</button>
+        </div>
+        <div class="search-grid">
+          <div class="field">
+            <label for="hLocation">Delhi Location</label>
+            <select id="hLocation" name="location"></select>
+          </div>
+          <div class="field">
+            <label for="hType">Property Type</label>
+            <select id="hType" name="propertyType">
+              <option value="Any">Any Type</option>
+              <option>Flat</option><option>Apartment</option><option>Builder Floor</option>
+              <option>Independent House</option><option>Villa</option><option>Plot</option>
+              <option>Office</option><option>Shop</option><option>Commercial Property</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="hBed">Bedrooms</label>
+            <select id="hBed" name="bedrooms">
+              <option value="Any">Any</option>
+              <option value="1">1 BHK</option><option value="2">2 BHK</option>
+              <option value="3">3 BHK</option><option value="4">4+ BHK</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="hMin">Min Price (₹)</label>
+            <input type="number" id="hMin" name="minPrice" placeholder="e.g. 2500000">
+          </div>
+          <div class="field">
+            <label for="hMax">Max Price (₹)</label>
+            <input type="number" id="hMax" name="maxPrice" placeholder="e.g. 15000000">
+          </div>
+          <div class="field">
+            <button type="submit" class="btn btn-gold btn-block"><i class="fa-solid fa-magnifying-glass"></i> Search Property</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="hero-stats">
+        <div class="stat"><b data-countup="500" data-suffix="+">0</b><span>Properties Listed</span></div>
+        <div class="stat"><b data-countup="30" data-suffix="+">0</b><span>Delhi Locations</span></div>
+        <div class="stat"><b data-countup="1000" data-suffix="+">0</b><span>Happy Clients</span></div>
+        <div class="stat"><b data-countup="10" data-suffix="+">0</b><span>Years Experience</span></div>
+      </div>
+      <p style="font-size:.72rem; color:rgba(255,255,255,.45); margin-top:10px;">Figures shown are sample demo statistics.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Handpicked</span>
+        <h2>Featured Properties in Delhi</h2>
+        <p>A selection of premium homes and commercial spaces currently available across Delhi.</p>
+      </div>
+      <div class="grid-3" id="featuredGrid"></div>
+      <div class="text-center" style="text-align:center; margin-top:36px;">
+        <a href="properties.html" class="btn btn-outline">View All Properties</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--paper-dim);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Explore By Location</span>
+        <h2>Popular Delhi Areas</h2>
+        <p>Browse properties in Delhi's most sought-after residential and commercial neighbourhoods.</p>
+      </div>
+      <div class="grid-4" id="areaGrid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our Promise</span>
+        <h2>Why Choose Delhi Properties?</h2>
+      </div>
+      <div class="grid-3">
+        <div class="feature-card reveal">
+          <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <h3>Delhi Local Expertise</h3>
+          <p>We focus only on Delhi, so our team knows every locality — from Dwarka to Mayur Vihar — inside out.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>Verified Property Information</h3>
+          <p>Every listing is checked for accurate pricing, size and location details before it goes live.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <h3>Wide Property Selection</h3>
+          <p>Flats, builder floors, independent houses, villas, plots, offices and shops — all in one place.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon"><i class="fa-solid fa-sliders"></i></div>
+          <h3>Easy Property Search</h3>
+          <p>Powerful filters by location, budget, bedrooms and property type help you find the right match fast.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Quick Response</h3>
+          <p>Reach us instantly by call or WhatsApp and get answers about any property the same day.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon"><i class="fa-solid fa-headset"></i></div>
+          <h3>Customer Support</h3>
+          <p>Our team guides you through every step, from shortlisting to site visits and final paperwork.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--paper-dim);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Simple Process</span>
+        <h2>How It Works</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="num">1</div><h3>Search Property</h3><p>Use our filters to browse flats, houses and commercial spaces across Delhi.</p></div>
+        <div class="step reveal"><div class="num">2</div><h3>Contact Dealer</h3><p>Call or WhatsApp us directly from any listing to ask questions or request details.</p></div>
+        <div class="step reveal"><div class="num">3</div><h3>Visit &amp; Finalize</h3><p>Schedule a site visit, review the property in person, and finalize the deal.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Client Feedback</span>
+        <h2>What People Say</h2>
+      </div>
+      <div class="grid-3">
+        <div class="review-card reveal">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Very easy to find properties in Delhi. The filters saved me a lot of time while searching in Dwarka."</p>
+          <div class="who"><div class="avatar">A</div><div><strong>Ankit S.</strong><div class="text-muted" style="font-size:.8rem;">Dwarka, Delhi</div></div></div>
+          <span class="demo-tag">Sample review</span>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Professional service and quick response on WhatsApp. Helped me shortlist builder floors in Rohini."</p>
+          <div class="who"><div class="avatar">P</div><div><strong>Priya M.</strong><div class="text-muted" style="font-size:.8rem;">Rohini, Delhi</div></div></div>
+          <span class="demo-tag">Sample review</span>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <p>"Good range of options for commercial shops near Karol Bagh. The details on each listing were clear."</p>
+          <div class="who"><div class="avatar">R</div><div><strong>Rohit K.</strong><div class="text-muted" style="font-size:.8rem;">Karol Bagh, Delhi</div></div></div>
+          <span class="demo-tag">Sample review</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Ready to find your next property in Delhi?</h2>
+          <p>Talk to our team on call or WhatsApp — we respond quickly.</p>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="tel:+919217151926" class="btn btn-outline-light"><i class="fa-solid fa-phone"></i> Call Now</a>
+          <a href="#" data-whatsapp-generic target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px; display:inline-flex;">
+          <span class="brand-mark">DP</span>
+          <span>Delhi Properties</span>
+        </a>
+        <p style="max-width:320px;">A dedicated property platform for Delhi — helping you buy, rent and sell flats, builder floors, houses and commercial spaces across the capital.</p>
+        <div class="social-row" aria-label="Social links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="properties.html">All Properties</a>
+        <a href="buy.html">Buy Property</a>
+        <a href="rent.html">Rent Property</a>
+        <a href="sell.html">Sell Property</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div>
+        <h4>Popular Areas</h4>
+        <a href="properties.html?location=Dwarka">Dwarka</a>
+        <a href="properties.html?location=Rohini">Rohini</a>
+        <a href="properties.html?location=Saket">Saket</a>
+        <a href="properties.html?location=Vasant%20Kunj">Vasant Kunj</a>
+        <a href="properties.html?location=Laxmi%20Nagar">Laxmi Nagar</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+919217151926"><i class="fa-solid fa-phone" style="margin-right:8px;"></i>+91 92171 51926</a>
+        <a href="#" data-whatsapp-generic target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" style="margin-right:8px;"></i>Chat on WhatsApp</a>
+        <a href="contact.html"><i class="fa-solid fa-location-dot" style="margin-right:8px;"></i>Serving all areas of Delhi, India</a>
+        <a href="mailto:info@delhiproperties.example"><i class="fa-solid fa-envelope" style="margin-right:8px;"></i>info@delhiproperties.example</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Delhi Properties. All rights reserved. Demo website — sample content only.</span>
+      <span>Property Dealer in Delhi | Delhi Only</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" data-whatsapp-generic target="_blank" rel="noopener" class="float-whatsapp" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/properties.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  const AREA_SAMPLE = [
+    {name:"Uttam Nagar", img:"https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=600&auto=format&fit=crop"},
+    {name:"Dwarka", img:"https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop"},
+    {name:"Janakpuri", img:"https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?q=80&w=600&auto=format&fit=crop"},
+    {name:"Rohini", img:"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop"},
+    {name:"Laxmi Nagar", img:"https://images.unsplash.com/photo-1494526585095-c41cabfe98bd?q=80&w=600&auto=format&fit=crop"},
+    {name:"Mayur Vihar", img:"https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=600&auto=format&fit=crop"},
+    {name:"Saket", img:"https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=600&auto=format&fit=crop"},
+    {name:"Vasant Kunj", img:"https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=600&auto=format&fit=crop"}
+  ];
+  document.addEventListener("DOMContentLoaded", () => {
+    renderFeatured("#featuredGrid", 6);
+    const areaGrid = qs("#areaGrid");
+    if (areaGrid) {
+      areaGrid.innerHTML = AREA_SAMPLE.map(a => {
+        const count = PROPERTIES.filter(p => p.location === a.name).length;
+        return `<div class="area-card reveal">
+          <img src="${a.img}" alt="${a.name}, Delhi" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/${a.name.replace(/\s/g,'')}/600/500';">
+          <h3>${a.name}</h3>
+          <span>${count} Propert${count === 1 ? "y" : "ies"} Listed</span>
+          <a class="btn btn-gold btn-sm" data-area-link="${a.name}" href="#">View Properties</a>
+        </div>`;
+      }).join("");
+      initAreaLinks();
+      initReveal();
+    }
+  });
+</script>
+
+</body>
+</html>
